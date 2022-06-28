@@ -4,7 +4,5 @@ b {
 
 p {
   background-color: orange;
- margin: 0px;
-    padding: 0px;
-  
+ margin: 3px, 3px, 3px, 3px; 
 }
