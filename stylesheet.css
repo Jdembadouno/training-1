@@ -5,4 +5,9 @@ b {
 p {
   background-color: orange;
  margin: 3px, 3px, 3px, 3px; 
+  padding-left: 3px;
+}
+
+li {
+  display: inline
 }
