@@ -1,13 +1,18 @@
 {
-  "background_color": "#ffffff",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "jdembadouno19.github",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "jdembadouno19.github",
-  "start_url": "/",
-  "theme_color": "#ffffff",
-"icons":[
-{"src":
+"background_color": "#ffffff",
+"dir": "ltr",
+"display": "standalone",
+"name": "jdembadouno19.github",
+"orientation": "any",
+"scope": "/",
+"short_name": "jdembadouno19.github",
+"start_url": "/",
+"theme_color": "#ffffff",
+"icons": [
+        {
+            "src": "/images/app-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+]
 }
