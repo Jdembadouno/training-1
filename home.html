@@ -1,26 +1,39 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-    <title>Index</title>
-    <meta charset="utf-8">
-<link rel="manifest" href="manifest.json" />
-	<!--link rel="stylesheet" href="css/style.css"-->
-
-
-</head>
-
-<body>
-
-<div id="app"></div>
-	
-<script src="script.js"></script>
-<script type="module">
-import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-const el = document.createElement('pwa-update');
-document.body.appendChild(el);
-</script>
-</body>
-
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <!-- Responsive -->
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <!-- Title -->
+  <title>Training</title> 
+  <!-- Meta Tags requred for 
+       Progressive Web App -->
+  <meta name= "apple-mobile-web-app-status-bar" content="#aa7700"> 
+  <meta name="theme-color" content="black"> 
+  <!-- Manifest File link -->
+  <link rel="manifest" href="manifest.json"> 
+</head> 
+<body> 
+  <div id="app"></div>
+  <script src="script.js"></script>
+  <script> 
+    window.addEventListener('load', () => { 
+      registerSW(); 
+    }); 
+    // Register the Service Worker 
+    async function registerSW() { 
+      if ('serviceWorker' in navigator) { 
+        try { 
+          await navigator 
+                .serviceWorker 
+                .register('serviceworker.js'); 
+        } 
+        catch (e) { 
+          console.log('SW registration failed'); 
+        } 
+      } 
+    } 
+ </script>
+</body> 
 </html>
